@@ -1,3 +1,106 @@
-body{
-    background-color: blue;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: black
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #0071A5;
+}
+
+.navigation {
+    display: flex;
+    background-color: #859EA9;
+}
+
+.inline-block {
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    padding: 55px 20px 20px;
+    display: inline-block;
+}
+
+.heroImg {
+    width: 30%;
+    background-color: #9E9EA6;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 50px auto;
+}
+
+.pictureMe {
+    border-radius: 25px;
+    padding: 15px
+}
+
+.jobTitle {
+    color: #0071A5;
+    padding: 20px;
+}
+
+.aboutSelf {
+    padding-bottom: 45px;
+    width: 76%;
+}
+
+.button {
+    border-radius: 15;
+    background-color: #4A5C71;
+    padding: 15px 45px 15px 45px;
+    border-radius: 5px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+
+.bottomfooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #859EA9;
+    padding: 20px;
+    
+}
+
+.bottomfooter li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 90px 20px 20px;
+    color: white;
+}
+
+.inline-block-footer {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    font-size: 20px;
+    text-align: center;
 }
