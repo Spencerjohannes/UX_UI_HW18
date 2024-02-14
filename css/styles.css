@@ -6,12 +6,15 @@
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
-    color: black
+    color: black;
+    text-align: center;
+    padding: 5% 2% 3% 2%;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
+
 }
 
 body {
@@ -67,10 +70,10 @@ nav li {
 .button {
     border-radius: 15;
     background-color: #4A5C71;
-    padding: 15px 45px 15px 45px;
+    padding: 18px 35px 18px 35px;
     border-radius: 5px;
     font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
 }
@@ -78,8 +81,74 @@ nav li {
 .content {
     text-align: center;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px;
+}
 
+#mySkills {
+    background-color: #F4F4F4;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10%;
+}
+
+.skillCard {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 21%;
+    text-align: start;
+}
+
+.picskills{
+    width: 235px;
+    padding-bottom: 30px;
+}
+
+h3{
+    color: #0071A5;
+    font-size: 25px;
+    padding: 3%;
+}
+
+#myWork-Grid {
+    background-color: #E1E1E1;
+    padding: 1%;
+    grid-template-rows: max-content 3fr 3fr 3fr;
+    grid-template-areas:
+        "project-card"
+        "project-card"
+        "project-card"
+    ;
+}
+
+.project-card {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.casestudy {
+    width: 450x;
+    height: 200px;
+    margin-left: 30%;
+}
+
+.mywork {
+    font-size: 32px;
+    color: #0071A5;
+    padding-bottom: 15px;
+    margin-right: 20%;
+}
+
+.describtion {
+    padding-bottom: 12%;
+    margin-right: 15%;
+    font-size: 20px;
 }
 
 .bottomfooter {
@@ -87,7 +156,7 @@ nav li {
     justify-content: space-between;
     background-color: #859EA9;
     padding: 20px;
-    
+
 }
 
 .bottomfooter li {
@@ -103,4 +172,9 @@ nav li {
     padding-left: 15px;
     font-size: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width:600){
+
+    /* filling in this information: step 05 on homework /*
 }
