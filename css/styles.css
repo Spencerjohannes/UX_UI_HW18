@@ -8,7 +8,7 @@ h1 {
     font-size: 48px;
     color: black;
     text-align: center;
-    padding: 5% 2% 3% 2%;
+    padding: 5% 2% 5% 2%;
 }
 
 a {
@@ -30,6 +30,20 @@ body {
     background-color: #859EA9;
 }
 
+.srjdesign {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    opacity: 0;
+    height: 50px;
+}
+
 .inline-block {
     font-size: 25px;
     color: white;
@@ -45,26 +59,26 @@ nav li {
 }
 
 .heroImg {
-    width: 30%;
+    max-width: 550px;
     background-color: #9E9EA6;
     border-radius: 18px;
-    padding: 15px;
     margin: 50px auto;
 }
 
 .pictureMe {
     border-radius: 25px;
-    padding: 15px
+    max-width: 325px;
 }
 
 .jobTitle {
     color: #0071A5;
-    padding: 20px;
+
 }
 
 .aboutSelf {
-    padding-bottom: 45px;
-    width: 76%;
+    Padding: 5% 10% 15% 10%;
+
+
 }
 
 .button {
@@ -76,6 +90,7 @@ nav li {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    border: none;
 }
 
 .content {
@@ -92,22 +107,24 @@ nav li {
     display: flex;
     justify-content: space-around;
     padding-bottom: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .skillCard {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
-    width: 21%;
+    width: 25%;
     text-align: start;
 }
 
-.picskills{
+.picskills {
     width: 235px;
     padding-bottom: 30px;
 }
 
-h3{
+h3 {
     color: #0071A5;
     font-size: 25px;
     padding: 3%;
@@ -115,27 +132,24 @@ h3{
 
 #myWork-Grid {
     background-color: #E1E1E1;
-    padding: 1%;
-    grid-template-rows: max-content 3fr 3fr 3fr;
-    grid-template-areas:
-        "project-card"
-        "project-card"
-        "project-card"
-    ;
+    padding-bottom: 10%;
 }
 
 .project-card {
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
+
 }
 
 .casestudy {
-    width: 450x;
-    height: 200px;
-    margin-left: 30%;
+    max-height: 250px;
+}
+
+.aline-card {
+    padding-left: 30px;
 }
 
 .mywork {
@@ -174,7 +188,107 @@ h3{
     text-align: center;
 }
 
-@media only screen and (max-width:600){
+.footer-logo {
+    height: 160px
+}
 
-    /* filling in this information: step 05 on homework /*
+@media only screen and (max-width:600px) {
+
+
+    .menu {
+        opacity: inherit;
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .srjdesign {
+        height: 36px;
+    }
+
+    ul {
+        display: none;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+
+    .content {
+        margin: 0;
+        padding: 30px;
+    }
+
+    .heroImg {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .pictureMe {
+        width: 250px;
+    }
+
+    .jobTitle {
+        padding-bottom: 20px;
+    }
+
+    .aboutSelf {
+        display: none
+    }
+
+
+    #mySkills {
+        padding: 16px;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .skillCard {
+        width: 100%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+
+    .project-card {
+        grid-template-columns: none;
+        margin: 0;
+        padding: 25px 16px 25px 16px;
+    }
+
+    .aline-card {
+        text-align: center;
+        padding: 0;
+    }
+
+    .describtion {
+        padding: 0px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .mywork {
+        padding: 25px 0px 25px 0px;
+        margin: 0;
+    }
+
+    .casestudy {
+        max-width: 300px;
+    }
+
+
+    .footer-logo {
+        height: 150px;
+        padding: 15px;
+        object-fit: cover;
+    }
 }
