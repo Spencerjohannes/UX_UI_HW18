@@ -17,6 +17,14 @@ a {
 
 }
 
+p {
+    font-size: 18px;
+}
+
+span {
+    color: black;
+}
+
 body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
